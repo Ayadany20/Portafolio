@@ -104,7 +104,7 @@ section {
 }
 
 .proyecto {
-    border: 1px solid #ccc;
+    border: 1px solid #f50ed6;
     border-radius: 10px;
     padding: 1rem;
     background-color: #fafafa;
@@ -287,4 +287,5 @@ footer {
 }
 
 }
+
 
