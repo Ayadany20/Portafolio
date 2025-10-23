@@ -1,0 +1,266 @@
+/* ========== ESTILOS GENERALES ========== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* ========== ENCABEZADO ========== */
+header {
+    background-color: #0078d7;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+/* ========== MENÚ ========== */
+nav {
+    background-color: #005a9e;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ========== SECCIONES ========== */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* ========== SECCIÓN ACERCA DE MÍ ========== */
+#acerca .acerca-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    color: #000;
+}
+
+#acerca .texto {
+    flex: 1.2;
+}
+
+#acerca .imagen {
+    flex: 0.8;
+    text-align: right;
+}
+
+#acerca .imagen img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+#acerca .imagen img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    #acerca .acerca-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    #acerca .imagen {
+        text-align: center;
+    }
+    #acerca .imagen img {
+        max-width: 250px;
+    }
+}
+
+/* ========== PROYECTOS ========== */
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.proyecto {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fafafa;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0078d7;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #005a9e;
+}
+/* ===== SECCIÓN CONTACTO ===== */
+#contacto {
+  background: linear-gradient(135deg, #1e293b, #b915da);
+  color: #f8fafc;
+  padding: 60px 20px;
+}
+
+.container-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-contacto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.info-contacto h2 {
+  margin-bottom: 15px;
+}
+
+.info-contacto p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #38bdf8;
+  transform: translateY(-3px);
+}
+
+.form-contacto {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.form-contacto h2 {
+  margin-bottom: 15px;
+}
+
+.form-contacto label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.form-contacto textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-contacto button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #38bdf8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-contacto button:hover {
+  background: #0284c7;
+}
+
+#mensaje-exito {
+  margin-top: 15px;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.oculto {
+  display: none;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .container-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-contacto {
+    width: 100%;
+  }
+}
+
+
+/* ========== PIE DE PÁGINA ========== */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 768px) {
+    #acerca .acerca-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    #acerca .imagen img {
+        max-width: 200px;
+    }
+}
